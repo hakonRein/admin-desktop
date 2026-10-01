@@ -23,10 +23,49 @@ body {
 li {
     list-style: none;
     padding: 10px 0;
+    font-weight: bold;
 }
 
 h1 {
     font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
+p {
+    font-size: 0.8rem;
+    color: #444444;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    width: 100px;
 }
 
 /* Layout */
@@ -39,12 +78,15 @@ h1 {
     grid-template-rows: 1fr 4fr;
 }
 
+/* Header section */
+
 header {
-    border:2px solid red;
+    padding: 0 20px;
 
     display: grid;
     grid-template-rows: 1fr 1fr;
     align-items: center;
+    box-shadow: 0 3px 8px gray;
 }
 
 .top-header {
@@ -55,6 +97,17 @@ header {
 .profile {
     display: flex;
 }
+
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.greeting {
+    display: flex;
+}
+
+/* Sidebar section */
 
 nav {
     grid-row: 1 / 3;
@@ -69,9 +122,72 @@ nav {
     display: flex;
 }
 
+/* Main section */
+
 main {
-    border: 2px solid yellow;
+    background-color: lightblue;
+    padding: 20px 10px 50px;
+
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 20px;
 }
+
+.project-grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.project {
+    position: relative;
+    border-left: 5px solid orange;
+}
+
+.project-icons {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.main-right-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.announcement-list {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trending-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending {
+    display: flex;
+    gap: 10px;
+}
+
+.project,
+.announcement-list,
+.trending-list {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px gray;
+    padding: 20px 10px;
+    gap: 20px;
+}
+
+
 
 /* Utility */
 
