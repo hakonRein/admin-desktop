@@ -15,6 +15,26 @@
     padding: 0;
 }
 
+img.white-svg {
+  filter: brightness(0) invert(1);
+}
+
+img {
+    height: 20px;
+}
+
+.profile-img {
+    height: 40px;
+}
+
+.profile-img-large {
+    height: 70px;
+}
+
+.logo img {
+    height: 40px;
+}
+
 body {
     font-family: 'Roboto', 'Helvetica', sans-serif;
     font-weight: normal;
@@ -58,7 +78,7 @@ a {
 }
 
 button {
-    background-color: blue;
+    background-color: #1992d4;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -74,7 +94,7 @@ button {
     height: 100vh;
 
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 220px 3fr;
     grid-template-rows: 1fr 4fr;
 }
 
@@ -94,17 +114,31 @@ header {
     justify-content: space-between;
 }
 
+.search,
 .profile {
     display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="search"] {
+    background-color: #d2e8f0;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 50ch;
 }
 
 .bottom-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .greeting {
     display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 /* Sidebar section */
@@ -118,14 +152,17 @@ nav {
     gap: 30px;
 }
 
-.logo {
+.logo,
+li {
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Main section */
 
 main {
-    background-color: lightblue;
+    background-color: #d2e8f0;
     padding: 20px 10px 50px;
 
     display: grid;
@@ -136,8 +173,7 @@ main {
 .project-grid {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -192,6 +228,6 @@ main {
 /* Utility */
 
 .blue-bg {
-    background-color: blue;
+    background-color: #1992d4;
     color: white;
 }
