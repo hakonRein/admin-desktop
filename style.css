@@ -15,26 +15,6 @@
     padding: 0;
 }
 
-img.white-svg {
-  filter: brightness(0) invert(1);
-}
-
-img {
-    height: 20px;
-}
-
-.profile-img {
-    height: 40px;
-}
-
-.profile-img-large {
-    height: 70px;
-}
-
-.logo img {
-    height: 40px;
-}
-
 body {
     font-family: 'Roboto', 'Helvetica', sans-serif;
     font-weight: normal;
@@ -88,7 +68,29 @@ button {
     width: 100px;
 }
 
-/* Layout */
+/* Images */
+
+img.white-svg {
+  filter: brightness(0) invert(1);
+}
+
+img {
+    height: 20px;
+}
+
+.profile-img {
+    height: 40px;
+}
+
+.profile-img-large {
+    height: 70px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* ------Layout--------- */
 
 .container {
     height: 100vh;
